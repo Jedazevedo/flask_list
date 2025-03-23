@@ -42,6 +42,7 @@
             <th>Área Informada</th>
             <th>Perímetro Informado</th>
             <th>Potência VA Iluminação</th>
+            <th>TUG's Qtde</th>
         </thead>
         <tbody>
             {% for get_dados in areas %}
@@ -50,10 +51,12 @@
                     <td>{{ get_dados.area }}</td>
                     <td>{{ get_dados.perimetro }}</td>
                     <td>{{ get_dados.potencia_luz }}</td>
+                    <td>{{ get_dados.quantidade_tugs }}</td>
                 </tr>        
             {% endfor %}
             <tfoot class="container-content">
                 <th>Total</th>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
